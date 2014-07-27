@@ -26,18 +26,18 @@ Once the source data is in the current working directory, the full `run_analysis
 The first step that this script performs is to import the relevant datasets:
   
 1. Test Data  
-  subject_test.txt -  subject that performed the activity   
-  x_test.txt - contains the test results for the test dataset  
-  y_test.txt - activity that was performed   
+  `subject_test.txt` -  subject that performed the activity   
+  `x_test.txt` - contains the test results for the test dataset  
+  `y_test.txt` - activity that was performed   
   
 2. Train Data  
-  subject_train.txt - subject that performed the activity  
-  x_train.txt - contains the test results for the training dataset   
-  y_train.txt - activity that was performed     
+  `subject_train.txt` - subject that performed the activity  
+  `x_train.txt` - contains the test results for the training dataset   
+  `y_train.txt` - activity that was performed     
   
 3. Reference Data  
-  features.txt - reference table for the name of the measurement in result dataset   
-  activity_labels.txt - reference table for the name of the activity performed 
+  `features.txt` - reference table for the name of the measurement in result dataset   
+  `activity_labels.txt` - reference table for the name of the activity performed 
 
 
 The above files are combined to form a full dataset that contains the named results, activity performed and subject. 
@@ -55,7 +55,7 @@ and each subject:
   
 Finally, this transformed data is written to a file called:  
 
-1. tidydata.txt 
-2. tidydata_means.txt 
+1. `tidydata.txt` 
+2. `tidydata_means.txt`
 
 ----
