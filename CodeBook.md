@@ -1,7 +1,5 @@
-#Code Book for Tidy Dataset 
-
-------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------
+Code Book for Tidy Dataset
+===========
 
 
 ## Experiment Background and Raw Data  
@@ -28,7 +26,6 @@ For each record it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-------
 
 ##Data Transformation and Processing   
 
@@ -59,7 +56,6 @@ basis for the final tidy dataset:
 Using the data resulting from the above transformations, a summary dataset was created which contains the average 
 feature value per subject and per activity.  
 
-----
 
 ##Final Outputs  
 
