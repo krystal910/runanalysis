@@ -59,29 +59,83 @@ feature value per subject and per activity.
 
 ##Final Outputs  
 
-The final tidy dataset is made up of 68 columns and just over 10,000 rows containing the mean and standard deviation 
-results for each subject and activity for each repetition.  These measurements are:  
+There are two final output files.  Each files contains 68 columns (details below).  The difference between the two is: 
 
-Variables               |                            |                              |                           
-------------------------|----------------------------|------------------------------|---------------------------- 
-subject                 |    activity                | tBodyAcc-mean()-X            |  tBodyAcc-mean()-Y          
-tBodyAcc-mean()-Z       |    tBodyAcc-std()-X        | tBodyAcc-std()-Y             |  tBodyAcc-std()-Z           
-tGravityAcc-mean()-X    |    tGravityAcc-mean()-Y    | tGravityAcc-mean()-Z         |  tGravityAcc-std()-X        
-tGravityAcc-std()-Y     |    tGravityAcc-std()-Z     | tBodyAccJerk-mean()-X        |  tBodyAccJerk-mean()-Y      
-tBodyAccJerk-mean()-Z   |    tBodyAccJerk-std()-X    | tBodyAccJerk-std()-Y         |  tBodyAccJerk-std()-Z       
-tBodyGyro-mean()-X      |    tBodyGyro-mean()-Y      | tBodyGyro-mean()-Z           | tBodyGyro-std()-X          
-tBodyGyro-std()-Y       |    tBodyGyro-std()-Z       | tBodyGyroJerk-mean()-X       | tBodyGyroJerk-mean()-Y     
-tBodyGyroJerk-mean()-Z  |    tBodyGyroJerk-std()-X   | tBodyGyroJerk-std()-Y        | tBodyGyroJerk-std()-Z      
-tBodyAccMag-mean()      |    tBodyAccMag-std()       | tGravityAccMag-mean()        | tGravityAccMag-std()       
-tBodyAccJerkMag-mean()  |    tBodyAccJerkMag-std()   | tBodyGyroMag-mean()          | tBodyGyroMag-std()         
-tBodyGyroJerkMag-mean() |    tBodyGyroJerkMag-std()  | fBodyAcc-mean()-X            | fBodyAcc-mean()-Y          
-fBodyAcc-mean()-Z       |   fBodyAcc-std()-X         | fBodyAcc-std()-Y             | fBodyAcc-std()-Z           
-fBodyAccJerk-mean()-X   |    fBodyAccJerk-mean()-Y   | fBodyAccJerk-mean()-Z        | fBodyAccJerk-std()-X       
-fBodyAccJerk-std()-Y    |    fBodyAccJerk-std()-Z    | fBodyGyro-mean()-X           | fBodyGyro-mean()-Y         
-fBodyGyro-mean()-Z      |    fBodyGyro-std()-X       | fBodyGyro-std()-Y            |  fBodyGyro-std()-Z          
-fBodyAccMag-mean()      |    fBodyAccMag-std()       | fBodyBodyAccJerkMag-mean()   | fBodyBodyAccJerkMag-std()  
-fBodyBodyGyroMag-mean() |    fBodyBodyGyroMag-std()  | fBodyBodyGyroJerkMag-mean()  | fBodyBodyGyroJerkMag-std() 
+ - tidydata.txt - has 10,299 rows containing the mean and standard deviation results for each subject and  activity for 
+ each repetition.
+ - tidydata_means.txt - contains the average value for each measurement for each subject and activity - 180 rows, 6 per 
+ subject.
 
 
-The final summary tidy dataset contains the same 68 columns above, however, it contains the average value for each 
-measurement for each subject and activity - 180 rows, 6 per subject.  
+Variable    |      Type    |      Detail
+-------------------------------    |      -------------------------------    |      -------------------------------
+subject    |      integer     |      1 - 30
+activity    |      character    |      6 levels - LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+tGravityAcc-std()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-mean()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-std()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyAccMag-mean()    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerkMag-mean()    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerkMag-mean()    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-mean()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-std()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyAccMag-mean()    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyGyroMag-mean()    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+tGravityAcc-mean()-X    |      numeric     |      Min = -1, Max = 1 
+tGravityAcc-std()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-std()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-std()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-std()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyAccMag-std()    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerkMag-std()    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerkMag-std()    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-std()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-std()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-std()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyAccMag-std()    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyGyroMag-std()    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-std()-X    |      numeric     |      Min = -1, Max = 1 
+tGravityAcc-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-mean()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-std()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-mean()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-std()-Y    |      numeric     |      Min = -1, Max = 1 
+tGravityAccMag-mean()    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroMag-mean()    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-mean()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-std()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-mean()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-std()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyAccJerkMag-mean()    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyGyroJerkMag-mean()    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-mean()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-std()-Y    |      numeric     |      Min = -1, Max = 1 
+tGravityAcc-mean()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyAccJerk-std()-Z    |      numeric     |      Min = -1, Max = 1 
+tBodyGyro-std()-X    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroJerk-std()-Z    |      numeric     |      Min = -1, Max = 1 
+tGravityAccMag-std()    |      numeric     |      Min = -1, Max = 1 
+tBodyGyroMag-std()    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyAcc-std()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyAccJerk-std()-X    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+fBodyGyro-std()-Z    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyAccJerkMag-std()    |      numeric     |      Min = -1, Max = 1 
+fBodyBodyGyroJerkMag-std()    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-mean()-Y    |      numeric     |      Min = -1, Max = 1 
+tBodyAcc-std()-Z    |      numeric     |      Min = -1, Max = 1 
+tGravityAcc-std()-X    |      numeric     |      Min = -1, Max = 1 
+
+
