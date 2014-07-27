@@ -6,7 +6,8 @@ README: run_analysis
 
 ***The purpose of this readme file is to explain how the run_analysis.R script in this repo works.***  
 
-The R script `run_analysis.R`  uses the working directory which should contain the source data collected from the Samsung Galaxy S smartphone.  A full description of this data is available on the original download site.  
+The R script `run_analysis.R`  uses the working directory which should contain the source data collected from the Samsung 
+Galaxy S smartphone.  A full description of this data is available on the original download site.  
 
 This script also requires the following packages:
 
@@ -18,9 +19,12 @@ This script also requires the following packages:
 -----
 
 ###Source Data  
-If the dataset has not already been downloaded and unzipped, code has been provided (currently commented out in the R script) that will download and unzip the files to the current working directory.
+If the dataset has not already been downloaded and unzipped, code has been provided (currently commented out in the 
+R script) that will download and unzip the files to the current working directory.
 
-Once the source data is in the current working directory, the full `run_analysis.R` script can be executed.  Details of what this script does is in the next section.    
+Once the source data is in the current working directory, the full `run_analysis.R` script can be executed in one 
+go (details below).  
+
 
 ###Data Import
 The first step that this script performs is to import the relevant datasets:
@@ -40,11 +44,11 @@ The first step that this script performs is to import the relevant datasets:
   `activity_labels.txt` - reference table for the name of the activity performed 
 
 
-The above files are combined to form a full dataset that contains the named results, activity performed and subject. 
+The above files are then combined to form a full dataset that contains the named results, activity performed and subject. 
 
 ###Processing Data
 
-After the import, the run_analysis.R script processess the full dataset and executes the following transformations: 
+After the import, the run_analysis.R script processes the full dataset and executes the following transformations: 
 
 1. Extracts only the measurements on the mean and standard deviation for each measurement. 
 2. Uses descriptive activity names to name the activities in the data set
@@ -53,7 +57,7 @@ After the import, the run_analysis.R script processess the full dataset and exec
 A second independant tidy dataset is then generated that contains the average of each variable for each activity 
 and each subject:
   
-Finally, this transformed data is written to a file called:  
+Finally, this transformed data is written to a file in the current working directory called:  
 
 1. `tidydata.txt` 
 2. `tidydata_means.txt`
