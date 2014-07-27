@@ -25,7 +25,7 @@ Once the source data is in the current working directory, the full `run_analysis
 ###Data Import
 The first step that this script performs is to import the relevant datasets:
   
-1. Test Data  
+1. Test Data
   `subject_test.txt` -  subject that performed the activity   
   `x_test.txt` - contains the test results for the test dataset  
   `y_test.txt` - activity that was performed   
