@@ -13,7 +13,7 @@ This script also requires the following packages:
 - `plyr`
 - `reshape2`
 
-**NOTE: The script has code to load the above packages but will error if they are not installed.  **
+*NOTE: The script has code to load the above packages but will error if they are not installed.*
 
 -----
 
