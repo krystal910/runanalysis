@@ -6,12 +6,12 @@ README: run_analysis
 
 ***The purpose of this readme file is to explain how the run_analysis.R script in this repo works.***  
 
-The R script run_analysis.R  uses the working directory which should contain the source data collected from the Samsung Galaxy S smartphone.  A full description of this data is available on the original download site.  
+The R script `run_analysis.R`  uses the working directory which should contain the source data collected from the Samsung Galaxy S smartphone.  A full description of this data is available on the original download site.  
 
 This script also requires the following packages:
 
-- plyr
-- reshape2 
+- `plyr`
+- `reshape2`
 
 **NOTE: The script has code to load the above packages but will error if they are not installed.  **
 
@@ -20,7 +20,7 @@ This script also requires the following packages:
 ###Source Data  
 If the dataset has not already been downloaded and unzipped, code has been provided (currently commented out in the R script) that will download and unzip the files to the current working directory.
 
-Once the source data is in the current working directory, the full run_analysis.R script can be executed.  Details of what this script does is in the next section.    
+Once the source data is in the current working directory, the full `run_analysis.R` script can be executed.  Details of what this script does is in the next section.    
 
 ###Data Import
 The first step that this script performs is to import the relevant datasets:
